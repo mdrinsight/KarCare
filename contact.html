@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kar Care Service</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .split-layout { display: flex; flex-wrap: wrap; gap: 40px; margin-top: 40px; }
+        .form-container, .info-container { flex: 1; min-width: 300px; }
+        .emergency-btn { 
+            display: block; text-align: center; background: var(--accent-red); color: #fff;
+            padding: 20px; font-size: 1.5rem; font-family: 'Orbitron'; border-radius: 10px;
+            text-decoration: none; margin-top: 20px; animation: pulse 2s infinite;
+        }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(230,57,70, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(230,57,70, 0); } 100% { box-shadow: 0 0 0 0 rgba(230,57,70, 0); } }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <a href="index.html" class="logo"><div class="logo-icon"></div> KAR CARE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <section style="margin-top: 80px;" class="animate-up">
+        <h1 class="section-title">Get in <span>Touch</span></h1>
+        
+        <div class="split-layout">
+            <div class="glass-card form-container">
+                <form onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Car Model</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" required></textarea>
+                        <label>Message / Issue</label>
+                    </div>
+                    <button class="btn" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="info-container">
+                <div class="glass-card" style="margin-bottom: 20px;">
+                    <h3>📍 Location</h3><p>Chennai, Tamil Nadu</p><br>
+                    <h3>🕒 Hours</h3><p>24/7 Emergency Support</p>
+                </div>
+                <div class="glass-card" style="height: 200px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.5);">
+                    <p style="color: var(--text-chrome);">[ Google Maps Embed Renders Here ]</p>
+                </div>
+                
+                <a href="tel:+910000000000" class="emergency-btn">🚨 Emergency? Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>Powered by passion for cars 🏎️</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
