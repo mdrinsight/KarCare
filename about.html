@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Kar Care Service</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .split-layout { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
+        .split-text { flex: 1; min-width: 300px; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <a href="index.html" class="logo"><div class="logo-icon"></div> KAR CARE</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section style="margin-top: 80px;" class="animate-up">
+        <div class="split-layout">
+            <div class="split-text">
+                <h1 class="section-title" style="text-align: left;">Born from <span>Passion</span></h1>
+                <p>Kar Care Service was built on a simple philosophy: available 24/7, honest pricing, and genuine care for people. Led by founder Karthik, we never charge for phone guidance during emergencies. We treat every car like a supercar.</p>
+            </div>
+        </div>
+
+        <div class="team-grid">
+            <div class="glass-card tilt-card">
+                <h3>Karthik</h3>
+                <p style="color: var(--accent-red);">Founder & Lead Mechanic</p>
+            </div>
+            <div class="glass-card tilt-card">
+                <h3>Stalin</h3>
+                <p style="color: var(--accent-blue);">Assistant Mechanic</p>
+            </div>
+            <div class="glass-card tilt-card">
+                <h3>The Young Team</h3>
+                <p style="color: var(--text-chrome);">Passionate Technicians</p>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>Powered by passion for cars 🏎️</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
